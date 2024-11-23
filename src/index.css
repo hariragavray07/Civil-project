@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-200 bg-gradient-to-br from-gray-900 to-gray-800;
+  }
+}
+
+@layer components {
+  .price-card {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .price-card:hover {
+    @apply transform -translate-y-1;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-indigo-400;
+  }
+
+  .dark-card {
+    @apply bg-gray-800 border border-gray-700;
+  }
+
+  .dark-header {
+    @apply bg-gray-900 border-b border-gray-700;
+  }
+}
